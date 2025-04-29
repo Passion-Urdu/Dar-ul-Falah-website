@@ -1,0 +1,111 @@
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.oval-card {
+    display: flex;
+    align-items: center;
+    padding: 20px 20px;
+    border-radius: 40px;
+    background-color: #ffffffe6;
+    text-align: center;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.233);
+    max-width: 650px;
+    width: 100%; /* Adjusted width to ensure it centers correctly */
+    margin: 0 auto; /* Ensures centering within parent */
+}
+
+
+
+.services-section-wide-card {
+	text-align: center;
+	padding: 50px 20px;
+	background-color: #2a2f4a63;
+  }
+
+
+.gif-container {
+    flex: 1;
+    max-width: 40%;
+}
+
+.gif-container img {
+    border-radius: 25px;
+    width: 100%;
+    height: auto;
+}
+
+.separator {
+    width: 4px;
+    height: 140px; 
+    background-color: #a8a8a8;
+    margin: 0 40px;
+    border-radius: 3px;
+
+}
+
+.text-container {
+    flex: 2;
+}
+
+.text-container h3 {
+    margin: 0;
+    font-size: 2.5em;
+    line-height: normal;
+    color: #565656;
+}
+.text-container h4 {
+    margin: 0;
+    font-size: 2em;
+    line-height: normal;
+    color: #000000;
+}
+
+@media screen and (max-width: 736px) {
+
+    .separator {
+        width: 3px;
+        height: 105px; 
+        background-color: #aeaeae;
+        margin: 0 20px;
+        border-radius: 3px;
+    }
+    .text-container h3 {
+        margin: 0;
+        font-size: 2em;
+        line-height: normal;
+        color: #545454;
+    }
+    .text-container h4 {
+        margin: 0;
+        font-size: 1.4em;
+        line-height: normal;
+        color: #000000;
+    }
+    
+
+}
+.text-container h3, h4 {
+
+    line-height: 35px;
+}
+.create-package-button {
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    background-color: #a54164;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 700;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.create-package-button:hover {
+    background-color: #932c50;
+}

@@ -1,0 +1,52 @@
+/* Scrolling Banner */
+.banner {
+    width: 100%;
+    height: 70px; 
+    background-color: #2f3548d9;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 15px rgb(0 0 0 / 36%);}
+
+.scrolling-text {
+    display: flex;
+    white-space: nowrap;
+    animation: scroll 18s linear infinite;
+    font-size: 25px; /* Increase font size for better visibility in thicker banner */
+}
+
+
+
+.scrolling-text span {
+    padding-right: 50px; /* Space between repetitions */
+}
+
+/* Keyframes for Mobile */
+@keyframes scroll {
+    0% {
+        transform: translateX(25%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Media Query for Desktop */
+@media (min-width: 768px) {
+
+    .scrolling-text {
+        display: flex;
+        white-space: nowrap;
+        animation: scroll 22s linear infinite;
+        font-size: 25px; /* Increase font size for better visibility in thicker banner */
+    }
+
+    @keyframes scroll {
+        0% {
+            transform: translateX(93%); /* Change the starting point for desktop */
+        }
+        100% {
+            transform: translateX(-100%); /* Adjust the ending point for desktop */
+        }
+    }
+}

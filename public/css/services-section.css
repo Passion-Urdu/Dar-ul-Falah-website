@@ -1,0 +1,82 @@
+/* Services Section */
+
+.services-section {
+	text-align: center;
+	padding: 50px 20px;
+	background-color: #424a58;
+  }
+  
+  .services-section h2 {
+	font-size: 2.5em;
+	margin-bottom: 30px;
+	color: #333;
+  }
+  
+  .services-cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 20px;
+  }
+  
+  .service-card {
+	background-color: rgb(255, 255, 255);
+	border-radius: 10px;
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.233);
+	width: 250px;
+	padding: 20px;
+	transition: transform 0.3s ease;
+	text-align: center;
+  }
+  
+  .service-card img {
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
+	border-radius: 8px;
+  }
+  
+  
+  .service-card p {
+	font-size: 1em;
+	color: #666;
+	margin-top: 10px;
+  }
+  
+  .service-card:hover {
+	transform: translateY(-10px);
+  }
+
+/* For mobile view */
+@media (max-width: 768px) {
+	.services-cards {
+	  display: grid;
+	  grid-template-columns: repeat(2, 1fr);
+	  gap: 10px;
+	  max-width: 100%;
+	  padding: 0 10px;
+	  box-sizing: border-box; /* Ensures padding doesn't affect overall width */
+	}
+  
+	.service-card {
+	  width: 100%;
+	  box-sizing: border-box;
+	  margin: 0;
+	  padding: 10px;
+	}
+	
+	.services-section h2 {
+	  font-size: 2em;
+	  padding: 0 10px; /* Ensures the title doesn't touch the edges of the screen */
+	  box-sizing: border-box;
+	}
+  
+	.service-card h3 {
+	  font-size: 1.25em;
+	}
+  
+	.service-card p {
+	  font-size: 0.9em;
+	}
+  }
+  
